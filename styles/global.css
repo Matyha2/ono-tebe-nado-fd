@@ -32,7 +32,7 @@ a {
 img {
   width: 100%;
 }
-
-button {
-  font: inherit;
+h1 {
+  display: inline-block;
+  width: 100%;
 }
