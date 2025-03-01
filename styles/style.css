@@ -15,14 +15,13 @@
   align-items: center;
   gap: 32px;
 }
-.header__link,
-.header__link_active {
+.header__link {
   color: #000000;
   font-size: 18px;
   text-underline-offset: 4px;
 }
 .header__links-list-item_no-bullit {
-  list-style: none;
+  list-style: none !important;
 }
 .header__link_active {
   text-decoration: none;
@@ -30,19 +29,19 @@
 .header__links-list-item {
   list-style: circle;
 }
-.header__address,
-.footer__address {
+.subblock__address {
   display: block;
   max-width: 220px;
+  font-style: normal;
   line-height: 24px;
   text-underline-offset: 4px;
 }
-.header__address > a,
-address {
+.subblock__address > a,
+p {
   color: #000000;
   font-size: 18px;
 }
-.header__address a {
+.subblock__address a {
   white-space: nowrap;
 }
 .header__menu {
@@ -85,9 +84,6 @@ address {
   line-height: 135px;
   letter-spacing: 30px;
 }
-address {
-  font-style: normal;
-}
 .aligned-text {
   text-align: start;
 }
@@ -123,6 +119,7 @@ address {
   font-size: 22px;
   line-height: 25.83px;
   background-color: transparent;
+  cursor: pointer;
 }
 .lots {
   padding: 180px 24px 24px;
@@ -214,8 +211,13 @@ address {
 }
 .about__text {
   max-width: 690px;
+}
+.about__text p {
   font-size: 20px;
   line-height: 24px;
+}
+.about__text p:first-child {
+  margin-bottom: 23px;
 }
 .about__column {
   display: grid;
@@ -231,11 +233,6 @@ address {
 }
 .footer__address {
   max-width: 240px;
-}
-.footer__address > a,
-address {
-  color: #000000;
-  font-size: 18px;
 }
 .footer__menu-list {
   font-size: 18px;
@@ -258,7 +255,4 @@ address {
 }
 .footer__social-icon {
   max-width: 48px;
-}
-.address__start {
-  justify-self: start;
 }

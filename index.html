@@ -13,8 +13,8 @@
     <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
-          <li class=" header__links-list-item_no-bullit">
-            <a class="header__link_active">главная</a>
+          <li class="header__links-list-item header__links-list-item_no-bullit">
+            <a class="header__link header__link_active">главная</a>
           </li>
           <li class="header__links-list-item">
             <a href="" class="header__link">посмотреть лоты</a>
@@ -25,14 +25,14 @@
         </ul>
       </nav>
       <a class="header__logo" href="#"> 
-        <img class="header__logo-image" src="../images/logo-black.svg" alt="логотип">
+        <img class="header__logo-image" src="./images/logo-black.svg" alt="логотип">
       </a>
       <div class="address">
-        <div class="header__address">
+        <address class="subblock__address">
           <a href="tel:+99995555555">+9 999 555 5555</a>
           <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          <address>наб. Принсенграхт 263- 265, Амстердам</address>
-        </div>
+          <p>наб. Принсенграхт 263- 265, Амстердам</p>
+        </address>
       </div>
     </header>
     <main class="content">
@@ -45,7 +45,7 @@
         </h1>
         <div class="cover__description">
           <p class="cover__description-text">Аукцион  вещей, в которые никто не верил </p>
-          <button class="bet-button">СДЕЛАТЬ СТАВКУ</button>
+          <button type="button" class="bet-button">СДЕЛАТЬ СТАВКУ</button>
         </div>
       </section>
       <section class="lots">
@@ -107,41 +107,44 @@
         <div class="about__column">
           <div class="about__behind-logo">
             <div class="about__logo">
-              <img class="about__logo-image" src="../images/logo-white.svg" alt="логотип блока">
+              <img class="about__logo-image" src="./images/logo-white.svg" alt="логотип блока">
             </div>
           </div>
           <div class="about__block"> 
             <h2 class="about__title">Об аукционе</h2>
-            <p class="about__text">Здесь вы не встретите очередное пафосное 
-              собрание невероятно дорогого антиквариата. Наши лоты вообще не 
-              должны были попасть ни на один аукцион. Потому что кому нужен 
-              дневник девочки-подростка или картина, которую может нарисовать 
-              даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
-              <br> <br>
-              Слишком сложные или, наоборот, слишком простые. Опережающие своё время.
-              В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то
-              они казались просто неудачными. Но, несмотря
-              <br> на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно
-              представить современную культуру. Когда в эти вещи не верил никто,
-              продолжали верить их создатели. И сейчас эти лоты стали культовыми. 
-            </p>
+            <div class="about__text">
+              <p>Здесь вы не встретите очередное пафосное 
+                собрание невероятно дорогого антиквариата. Наши лоты вообще не 
+                должны были попасть ни на один аукцион. Потому что кому нужен 
+                дневник девочки-подростка или картина, которую может нарисовать 
+                даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
+              </p>
+              <p>
+                Слишком сложные или, наоборот, слишком простые. Опережающие своё время.
+                В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то
+                они казались просто неудачными. Но, несмотря
+              </p>
+              <p>
+                 на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно
+                представить современную культуру. Когда в эти вещи не верил никто,
+                продолжали верить их создатели. И сейчас эти лоты стали культовыми. 
+              </p>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="address__start">
-        <div class="footer__address">
-          <a href="tel:+99995555555">+9 999 555 5555</a>
-          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          <address>наб. Принсенграхт 263-265, Амстердам</address>
-        </div>
-      </div>
+      <address class="subblock__address footer__address">
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p>наб. Принсенграхт 263-265, Амстердам</p>
+      </address>
       <div class="footer__menu-list">
         <nav>
           <ul class="footer__menu-list">
             <li class="footer__menu-list-item">
-              <a class="footer__menu-link_active" href=""> главная</a>
+              <a class="footer__menu-link footer__menu-link_active" href=""> главная</a>
             </li>
             <li class="footer__menu-list-item">
               <a class="footer__menu-link" href="">посмотреть лоты</a>
@@ -155,17 +158,17 @@
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
           <a href="" class="footer__social-link">
-            <img class="footer__social-icon" src="../images/yt.svg" alt="ютуб иконка">
+            <img class="footer__social-icon" src="./images/yt.svg" alt="ютуб иконка">
           </a>
         </li>
         <li class="footer__social-list-item">
           <a href="" class="footer__social-link">
-            <img class="footer__social-icon" src="../images/vk.svg" alt="вк иконка">
+            <img class="footer__social-icon" src="./images/vk.svg" alt="вк иконка">
           </a>
         </li>
         <li class="footer__social-list-item">
           <a href="" class="footer__social-link">
-            <img class="footer__social-icon" src="../images/pinterest.svg" alt="пинтерест иконка">
+            <img class="footer__social-icon" src="./images/pinterest.svg" alt="пинтерест иконка">
           </a>
         </li>
       </ul>
